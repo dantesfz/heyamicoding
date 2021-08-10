@@ -1,0 +1,48 @@
+body header {
+  width: 100vw;
+  display: grid;
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+  body header div {
+    width: fit-content; }
+    body header div .imgBurguer {
+      width: 46px; }
+  body header .containerTitle {
+    width: 83vw;
+    padding-left: 7px; }
+    body header .containerTitle a h1 {
+      font-weight: 1000; }
+  body header .menuBurguer {
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body header .menuBurguer .menuList {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      word-spacing: rem;
+      list-style-type: none; }
+      body header .menuBurguer .menuList li {
+        justify-items: center;
+        align-content: center;
+        padding: 6px; }
+
+footer .iconoWpp {
+  width: 30px; }
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+a:visited {
+  color: black; }
+
+* {
+  padding: 0;
+  margin: 0; }
