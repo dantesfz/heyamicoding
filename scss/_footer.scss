@@ -1,6 +1,22 @@
-footer{
-
-    .iconoWpp{
-        width: 30px;
+footer {
+    display: grid;
+    grid-template-columns: "div" "div";
+    grid-template-columns: 1fr 1fr;
+  .contactoFooter {
+    
+    width: 80vw;
+    padding-left: 10px;
+  }
+   div.containerWpp {
+    
+      width: 20vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding:10%;
+    .iconoWpp {
+      width: 30px;
     }
+  }
 }

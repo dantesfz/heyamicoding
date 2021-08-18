@@ -1,0 +1,49 @@
+body {
+  main  {  
+
+
+    .mainServYTrabaj {
+      width: 100vw;
+      display: grid;
+      grid-template-areas:
+        "containerServicios"
+        "containerServicios" 
+        "containerServicios" 
+        "containerServicios" 
+        "containerServicios" 
+        "containerServicios"  ;
+      grid-template-columns: 2fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+      gap: 15px 0px; 
+         
+      justify-content: center; 
+      align-content: center; 
+      justify-items: center; 
+      align-items: center; 
+      width: 100%; 
+      
+      background-color: blue;
+    }
+      .containerServicios {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 1rem;
+        grid-area: containerServicios;
+      
+      .imgServicios {
+        width: 320px;
+        opacity: 0.85;
+      }
+      .textBox {
+        background-color: aquamarine;
+        border: groove rgb(151, 98, 98);
+        width: 200px;
+      }
+    }
+  
+  }
+}

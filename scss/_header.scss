@@ -2,11 +2,16 @@ body {
   header {
     width: 100vw;
     display: grid;
+    grid-template-columns: 15% 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "imgBurguer" "containerTitle"
+                             "menuBurguer" ;
     display: flex;
     position: sticky;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    background-color: red;
     div {
         width: fit-content;
         .imgBurguer {
@@ -15,8 +20,8 @@ body {
         }
       }
     .containerTitle {
-      width: 83vw;
-     
+      width: 100vw;
+      display: flex;
       padding-left: 7px;
       a {
         h1 {
@@ -29,7 +34,7 @@ body {
     .menuBurguer {
       width: 100vw;
       height: 2rem;
-      
+      flex-wrap: wrap;
       display: flex;
       justify-content: center;
       align-items: center;

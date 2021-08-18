@@ -1,23 +1,29 @@
 body header {
   width: 100vw;
   display: grid;
+  grid-template-columns: 15% 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "imgBurguer" "containerTitle" "menuBurguer";
   display: flex;
   position: sticky;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  background-color: red; }
   body header div {
     width: fit-content; }
     body header div .imgBurguer {
       width: 46px; }
   body header .containerTitle {
-    width: 83vw;
+    width: 100vw;
+    display: flex;
     padding-left: 7px; }
     body header .containerTitle a h1 {
       font-weight: 1000; }
   body header .menuBurguer {
     width: 100vw;
     height: 2rem;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -32,16 +38,67 @@ body header {
         align-content: center;
         padding: 6px; }
 
-footer .iconoWpp {
-  width: 30px; }
+footer {
+  display: grid;
+  grid-template-columns: "div" "div";
+  grid-template-columns: 1fr 1fr; }
+  footer .contactoFooter {
+    width: 80vw;
+    padding-left: 10px; }
+  footer div.containerWpp {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10%; }
+    footer div.containerWpp .iconoWpp {
+      width: 30px; }
 
-a {
+body a {
   font-style: normal;
   text-decoration: none;
   text-transform: none; }
 
-a:visited {
+body a:visited {
   color: black; }
+
+body main .mainServYTrabaj {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "containerServicios" "containerServicios"  "containerServicios"  "containerServicios"  "containerServicios"  "containerServicios";
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px 0px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  background-color: blue; }
+
+body main .containerServicios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 1rem;
+  grid-area: containerServicios; }
+  body main .containerServicios .imgServicios {
+    width: 320px;
+    opacity: 0.85; }
+  body main .containerServicios .textBox {
+    background-color: aquamarine;
+    border: groove #976262;
+    width: 200px; }
+
+main .mainServYTrabaj .containerTrabajos .imgTrabajos {
+  width: 320px; }
+
+main .mainServYTrabaj .containerTrabajos .textBox {
+  width: 100vw; }
 
 * {
   padding: 0;
