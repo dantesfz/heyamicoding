@@ -1,49 +1,70 @@
-body {
-  main  {  
 
+  main.mainServ {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+      "gridQuehacemos" "gridReformas"
+      "gridProyectos" "gridDecoracion"
+      "gridDemoliciones" "gridMantenimiento";
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 35rem 35rem 35rem ;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+   
+    
 
-    .mainServYTrabaj {
-      width: 100vw;
-      display: grid;
-      grid-template-areas:
-        "containerServicios"
-        "containerServicios" 
-        "containerServicios" 
-        "containerServicios" 
-        "containerServicios" 
-        "containerServicios"  ;
-      grid-template-columns: 2fr; 
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-      gap: 15px 0px; 
-         
-      justify-content: center; 
-      align-content: center; 
-      justify-items: center; 
-      align-items: center; 
-      width: 100%; 
-      
-      background-color: blue;
-    }
-      .containerServicios {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        margin: 1rem;
-        grid-area: containerServicios;
-      
+    .containerServicios {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+
+      position: relative;
+
       .imgServicios {
         width: 320px;
         opacity: 0.85;
+        position: relative;
+        border-radius: 5px;
       }
       .textBox {
-        background-color: aquamarine;
-        border: groove rgb(151, 98, 98);
-        width: 200px;
+        background-color: #F2F2F2;
+        opacity: 0.7;
+        width: 15rem;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0.8rem;
+        font-weight:1000;
+        word-spacing: 1px;
+        border-radius: 5px;
+       
+      }
+      .gridQuehacemos {
+        grid-area: gridQuehacemos;
+      }
+      .gridReformas {
+        grid-area: gridReformas;
+      }
+      .gridProyectos {
+        grid-area: gridProyectos;
+      }
+      .gridDecoracion {
+        grid-area: gridDecoracion;
+      }
+      .gridDemoliciones {
+        grid-area: gridDemoliciones;
+      }
+      .gridMantenimiento {
+        grid-area: gridMantenimiento;
       }
     }
-  
   }
-}
+

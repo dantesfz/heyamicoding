@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="img/iconomontaña.png " alt="" class="imgBurguer">
-        </div>
         <div class="containerTitle">
+
             <a href="index.html">
-                <h1>HUARPE construcciones</h1>
+                <h1>Huarpe Construcciones</h1>
             </a>
         </div>
 
@@ -37,13 +36,58 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main class="siteContacto">
+        <br>
+        <div > <p class="Presupuesto">¡Pidanos su presupuesto!</p></div> <br>
+        <div class="inputs">
+            <form action="">
+                <div >
+                    <label for="fullname">Nombre completo:</label><br>
+                    <input type="text" id="fullname" name="fullname" value="Juan Perez"><br>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="text" id="telefono" name="telefono" value="Teléfono"><br>
+                    <label for="email">Ingrese su email:</label><br>
+                    <input type="email" id="email" name="email" value="Ingrese su email"><br><br>
+
+                    <label for="tipoDeObra">¿Que tipo de obra realizaras?</label><br><br>
+                    <input type="radio" id="reforma" name="tipodeObra" value="reforma">
+                    <label for="reforma">Reforma</label><br>
+                    <input type="radio" id="proyectoIntegral" name="tipodeObra" value="proyectoIntegral">
+                    <label for="proyectoIntegral">Proyecto Integral</label><br>
+                    <input type="radio" id="Decoracion" name="tipodeObra" value="Decoracion">
+                    <label for="Decoracion">Decoración</label><br>
+                    <input type="radio" id="Demoliciones" name="tipodeObra" value="Demoliciones">
+                    <label for="Demoliciones">Demoliciones</label><br>
+                    <input type="radio" id="Mantenimiento" name="tipodeObra" value="Mantenimiento">
+                    <label for="Mantenimiento">Mantenimiento</label><br><br>
+
+                    <label for="ambientes">¿Cuántos ambientes se verían involucrados?</label> <br><br>
+
+                    <select name="ambientes" id="ambientes">
+                        <option value="menosDeDos">Dos o menos ambientes</option>
+                        <option value="menosDeCinco">Cinco o menos ambientes</option1>
+                        <option value="masDeCinco">Más de cinco ambientes</option>
+                    </select> <br><br>
+                </div>
+                <div >
+                    <label for="descripcion">Describe lo que necesitas</label><br><br>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="15"></textarea><br><br>
+                    <label for="respuesta">Responderemos a la brevedad!</label><br><br>
+                    <input type="submit" value="Enviar" name="respuesta">
+
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2994.0708632761407!2d2.1214719!3d41.3725451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f21234d82f%3A0x89573679e45ac06b!2sC.%20Mas%2C%2049%2C%2008903%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1631053892450!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="mapaDire"></iframe>
+            </form>
+
+        </div>
+
+    </main>
     <footer>
         <div class="contactoFooter">
-            <p> <a href="googlemaps.com">Calle Padre Luque nº 14, 1º. Almería</a>
-            <p>+695584040</p>
-            <a href="gmail.com">info@huarpe.es</a>
-            </p>
+            <p><a href="https://goo.gl/maps/LuvXK82NtbjKg6S67">Carrer Mas d'en Sala 49, Barcelona</a></p>
         </div>
         <div class="containerWpp">
             <a href="whatsapp.com"> <img src="img/1217136_whatsapp_icon.png" alt="" class="iconoWpp"></a>

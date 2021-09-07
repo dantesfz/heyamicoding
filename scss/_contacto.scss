@@ -1,0 +1,28 @@
+main.siteContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+  
+  .inputs form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1rem;
+    left: 10%;
+   
+    
+    input{
+        padding: 0.1rem;
+        margin: 0.3rem;
+    }
+
+    .mapaDire{
+        margin-left: 2rem;
+    }
+   
+ 
+  }
+}

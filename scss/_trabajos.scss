@@ -1,13 +1,59 @@
-main {
-    .mainServYTrabaj {
-    .containerTrabajos{
-        
-        .imgTrabajos{
-            width: 320px;
-        }
-        .textBox{
-            width: 100vw;
-        }
+main.mainTrabajos {
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    "gridReforma" "gridAdaptacion"
+    "gridReformaIntegral" "gridManteni";
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 35rem 35rem;
+
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+
+  .containerTrabajos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+
+    position: relative;
+
+    .imgTrabajos {
+      width: 320px;
+      opacity: 0.85;
+      position: relative;
+      border-radius: 5px;
     }
+    .textBox {
+      background-color: #f2f2f2;
+      opacity: 0.7;
+      width: 15rem;
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 0.8rem;
+      font-weight:1000 ;
+       word-spacing: 1px;
+      border-radius: 5px;
     }
+    .gridReforma {
+      grid-area: gridReforma;
+    }
+    .gridAdaptacion {
+      grid-area: gridAdaptacion;
+    }
+    .gridReformaIntegral {
+      grid-area: gridReformaIntegral;
+    }
+    .gridManteni {
+      grid-area: gridManteni;
+    }
+  }
 }

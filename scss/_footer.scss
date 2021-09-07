@@ -1,22 +1,26 @@
 footer {
-    display: grid;
-    grid-template-columns: "div" "div";
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto auto auto;
+  
   .contactoFooter {
-    
-    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20rem;
     padding-left: 10px;
-  }
-   div.containerWpp {
-    
-      width: 20vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding:10%;
-    .iconoWpp {
-      width: 30px;
+
+    p {
+      text-decoration: none;
+      font-size: 1rem;
+     
     }
+   
+  }
+  .iconoWpp {
+    width: 30px;
   }
 }

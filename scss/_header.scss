@@ -1,57 +1,62 @@
 body {
   header {
+    background-color: #F2F2F2;
     width: 100vw;
-    display: grid;
-    grid-template-columns: 15% 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "imgBurguer" "containerTitle"
-                             "menuBurguer" ;
     display: flex;
     position: sticky;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: red;
-    div {
-        width: fit-content;
-        .imgBurguer {
-          width: 46px;
-          
-        }
-      }
+    
+
     .containerTitle {
       width: 100vw;
-      display: flex;
       padding-left: 7px;
-      a {
-        h1 {
-          font-weight: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
 
-        }
+      margin-top: 1rem;
+      margin-left: 11rem;
+      h1 {
+        font-weight: 1000;
       }
+      @media (max-width: 320px) {
+        padding-left:0px;
+        margin-top: 1rem;
+      margin-left: 1rem
+  
+      }
+
+     
     }
-    
+
     .menuBurguer {
       width: 100vw;
       height: 2rem;
       flex-wrap: wrap;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      margin-left: 11rem;
+      @media (max-width: 320px) {
+        margin-left: 1rem;
+      }
 
       .menuList {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;               
-        word-spacing: rem;
+        flex-direction: row;
+        word-spacing: 0.3rem;
         list-style-type: none;
-       
-        
+
         li {
-            justify-items: center;
-            align-content: center;
-            padding: 6px;
-        
+          justify-items: center;
+          align-content: center;
+          padding: 6px;
         }
       }
     }

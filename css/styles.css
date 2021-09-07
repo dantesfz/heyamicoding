@@ -1,37 +1,45 @@
 body header {
+  background-color: #F2F2F2;
   width: 100vw;
-  display: grid;
-  grid-template-columns: 15% 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: "imgBurguer" "containerTitle" "menuBurguer";
   display: flex;
   position: sticky;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: red; }
-  body header div {
-    width: fit-content; }
-    body header div .imgBurguer {
-      width: 46px; }
+  align-items: center; }
   body header .containerTitle {
     width: 100vw;
+    padding-left: 7px;
     display: flex;
-    padding-left: 7px; }
-    body header .containerTitle a h1 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 11rem; }
+    body header .containerTitle h1 {
       font-weight: 1000; }
+    @media (max-width: 320px) {
+      body header .containerTitle {
+        padding-left: 0px;
+        margin-top: 1rem;
+        margin-left: 1rem; } }
   body header .menuBurguer {
     width: 100vw;
     height: 2rem;
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 11rem; }
+    @media (max-width: 320px) {
+      body header .menuBurguer {
+        margin-left: 1rem; } }
     body header .menuBurguer .menuList {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      word-spacing: rem;
+      word-spacing: 0.3rem;
       list-style-type: none; }
       body header .menuBurguer .menuList li {
         justify-items: center;
@@ -39,21 +47,23 @@ body header {
         padding: 6px; }
 
 footer {
-  display: grid;
-  grid-template-columns: "div" "div";
-  grid-template-columns: 1fr 1fr; }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto auto auto; }
   footer .contactoFooter {
-    width: 80vw;
-    padding-left: 10px; }
-  footer div.containerWpp {
-    width: 20vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 10%; }
-    footer div.containerWpp .iconoWpp {
-      width: 30px; }
+    flex-direction: column;
+    width: 20rem;
+    padding-left: 10px; }
+    footer .contactoFooter p {
+      text-decoration: none;
+      font-size: 1rem; }
+  footer .iconoWpp {
+    width: 30px; }
 
 body a {
   font-style: normal;
@@ -63,43 +73,188 @@ body a {
 body a:visited {
   color: black; }
 
-body main .mainServYTrabaj {
+main.mainServ {
   width: 100vw;
   display: grid;
-  grid-template-areas: "containerServicios" "containerServicios"  "containerServicios"  "containerServicios"  "containerServicios"  "containerServicios";
-  grid-template-columns: 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 15px 0px;
+  grid-template-areas: "gridQuehacemos" "gridReformas" "gridProyectos" "gridDecoracion" "gridDemoliciones" "gridMantenimiento";
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 35rem 35rem 35rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center; }
+  main.mainServ .containerServicios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    position: relative; }
+    main.mainServ .containerServicios .imgServicios {
+      width: 320px;
+      opacity: 0.85;
+      position: relative;
+      border-radius: 5px; }
+    main.mainServ .containerServicios .textBox {
+      background-color: #F2F2F2;
+      opacity: 0.7;
+      width: 15rem;
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 0.8rem;
+      font-weight: 1000;
+      word-spacing: 1px;
+      border-radius: 5px; }
+    main.mainServ .containerServicios .gridQuehacemos {
+      grid-area: gridQuehacemos; }
+    main.mainServ .containerServicios .gridReformas {
+      grid-area: gridReformas; }
+    main.mainServ .containerServicios .gridProyectos {
+      grid-area: gridProyectos; }
+    main.mainServ .containerServicios .gridDecoracion {
+      grid-area: gridDecoracion; }
+    main.mainServ .containerServicios .gridDemoliciones {
+      grid-area: gridDemoliciones; }
+    main.mainServ .containerServicios .gridMantenimiento {
+      grid-area: gridMantenimiento; }
+
+main.mainTrabajos {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "gridReforma" "gridAdaptacion" "gridReformaIntegral" "gridManteni";
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 35rem 35rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
-  align-items: center;
-  width: 100%;
-  background-color: blue; }
+  align-items: center; }
+  main.mainTrabajos .containerTrabajos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    position: relative; }
+    main.mainTrabajos .containerTrabajos .imgTrabajos {
+      width: 320px;
+      opacity: 0.85;
+      position: relative;
+      border-radius: 5px; }
+    main.mainTrabajos .containerTrabajos .textBox {
+      background-color: #f2f2f2;
+      opacity: 0.7;
+      width: 15rem;
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 0.8rem;
+      font-weight: 1000;
+      word-spacing: 1px;
+      border-radius: 5px; }
+    main.mainTrabajos .containerTrabajos .gridReforma {
+      grid-area: gridReforma; }
+    main.mainTrabajos .containerTrabajos .gridAdaptacion {
+      grid-area: gridAdaptacion; }
+    main.mainTrabajos .containerTrabajos .gridReformaIntegral {
+      grid-area: gridReformaIntegral; }
+    main.mainTrabajos .containerTrabajos .gridManteni {
+      grid-area: gridManteni; }
 
-body main .containerServicios {
+main#mainNosotros {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around; }
+  main#mainNosotros .nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    justify-content: center;
+    right: 11%; }
+    main#mainNosotros .nosotros .imgNosotros {
+      width: 50vw;
+      padding: 1rem;
+      position: relative;
+      border-radius: 5px;
+      opacity: 0.95; }
+    main#mainNosotros .nosotros .textBoxNosotros {
+      background-color: #F2F2F2;
+      font-weight: 1000;
+      word-spacing: 1px;
+      opacity: 0.7;
+      position: absolute;
+      top: 10%;
+      left: 70%;
+      width: 50%;
+      padding: 1rem;
+      border-radius: 5px; }
+
+body main.mainIndex {
   width: 100vw;
-  margin: 1rem;
-  grid-area: containerServicios; }
-  body main .containerServicios .imgServicios {
-    width: 320px;
-    opacity: 0.85; }
-  body main .containerServicios .textBox {
-    background-color: aquamarine;
-    border: groove #976262;
-    width: 200px; }
+  display: grid;
+  grid-template-areas: "gridBar" "gridCocina" "gridPatio" "gridTerraza";
+  grid-template-columns: 35% 38%;
+  grid-template-rows: 3fr 3fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center; }
+  body main.mainIndex div.blockIndex {
+    position: relative; }
+    body main.mainIndex div.blockIndex .imgIndex {
+      width: 30rem;
+      position: relative;
+      opacity: 0.7; }
+    body main.mainIndex div.blockIndex .tituloIndex {
+      text-decoration: solid;
+      font-weight: bolder;
+      font-size: 2.2rem;
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      width: 50%;
+      text-align: center; }
+    body main.mainIndex div.blockIndex .gridBar {
+      grid-template-areas: gridBar; }
+    body main.mainIndex div.blockIndex .gridCocina {
+      grid-template-areas: gridCocina; }
+    body main.mainIndex div.blockIndex .gridPatio {
+      grid-template-areas: gridPatio; }
+    body main.mainIndex div.blockIndex .gridTerraza {
+      grid-template-areas: gridTerraza; }
 
-main .mainServYTrabaj .containerTrabajos .imgTrabajos {
-  width: 320px; }
-
-main .mainServYTrabaj .containerTrabajos .textBox {
-  width: 100vw; }
+main.siteContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main.siteContacto .inputs form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1rem;
+    left: 10%; }
+    main.siteContacto .inputs form input {
+      padding: 0.1rem;
+      margin: 0.3rem; }
+    main.siteContacto .inputs form .mapaDire {
+      margin-left: 2rem; }
 
 * {
   padding: 0;
   margin: 0; }
+
+body {
+  background-color: #F2F2F2;
+  font-family: 'Roboto', sans-serif;
+  color: #0D0D0D; }
